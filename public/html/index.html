@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChoresCount</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/Logo.png" />
+    <script src="js/chorescount.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="flex flex-wrap flex-col justify-center items-center h-screen gap-4"
+      id="biggest-container"
+    >
+      <div class="title">
+        <img src="img/Logo.png" alt="Logo ChoresCount" width=auto height=auto/>
+      </div>
+      <div class="flex flex-wrap flex-row justify-center gap-4">
+        <button class="button text-lg" id="button1" onclick="pingApi('Kitchen')">
+        Kitchen
+        </button>
+        <button class="button text-lg" id="button2" onclick="pingApi('Bedroom')">
+        bedroom
+        </button>
+        <button class="button text-lg" id="button3" onclick="pingApi('Outside')">
+        outside
+        </button>
+        <button class="button text-lg" onclick="pingApi('Clear')">Clear</button>
+      </div>
+
+      
+      <div class="grid-container" id="container"></div>
+
+
+      <div id="Task"></div>
+    </div>
+  </body>
+</html>
